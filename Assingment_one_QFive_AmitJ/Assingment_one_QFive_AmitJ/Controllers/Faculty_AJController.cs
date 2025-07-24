@@ -13,5 +13,13 @@ namespace Assingment_one_QFive_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult Professor()
+        {
+            return View();
+        }
+        public string ProfessorOne()
+        {
+            return "<s>This Is Professor</s>";
+        }
     }
 }

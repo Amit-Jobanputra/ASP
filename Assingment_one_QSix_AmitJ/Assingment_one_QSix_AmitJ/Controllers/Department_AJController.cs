@@ -13,5 +13,13 @@ namespace Assingment_one_QSix_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult Department()
+        {
+            return View();
+        }
+        public string DepartmentOne()
+        {
+            return "<mark>This Is Department</mark>";
+        }
     }
 }
