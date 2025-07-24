@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assingment_one_QSix_AmitJ", "Assingment_one_QSix_AmitJ\Assingment_one_QSix_AmitJ.csproj", "{FDC64D93-770D-43C6-A430-AB8959BF121D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDC64D93-770D-43C6-A430-AB8959BF121D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC64D93-770D-43C6-A430-AB8959BF121D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC64D93-770D-43C6-A430-AB8959BF121D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC64D93-770D-43C6-A430-AB8959BF121D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DD5C550-68A3-43DD-BBDE-251F32D34DC2}
+	EndGlobalSection
+EndGlobal
