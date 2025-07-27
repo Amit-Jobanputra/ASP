@@ -17,6 +17,9 @@ namespace Assingment_one_QNine_AmitJ.Controllers
         {
             return View();
         }
-
+        public string PromiseOne()
+        {
+            return "<marquee>This Is Promise</marquee>";
+        }
     }
 }
