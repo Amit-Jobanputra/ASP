@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Arithmatic";
+    int A = ViewBag.a;
+    int B = ViewBag.b;
+    string[] oprators = { "+", "-","*","/"};
+    string space = "   ";
+    int[] result = { A + B ,A-B,A*B,A/B};
+    
+}
+
+<h2>Arithmatic</h2>
+<p>
+Value A :- @for (int i =0; i < oprators.Length ; i++) {@A@space}</p><br>
+<p>Value B :- @for (int i = 0; i < oprators.Length; i++)
+{@oprators[i] @B@space}</p><hr>
+<p>Answer :-  @for (int i = 0; i < oprators.Length; i++) {@result[i]@space} 
+</p>
+
