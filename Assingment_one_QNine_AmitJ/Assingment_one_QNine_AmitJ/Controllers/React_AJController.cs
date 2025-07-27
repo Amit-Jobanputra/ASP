@@ -13,5 +13,10 @@ namespace Assingment_one_QNine_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult Promise()
+        {
+            return View();
+        }
+
     }
 }

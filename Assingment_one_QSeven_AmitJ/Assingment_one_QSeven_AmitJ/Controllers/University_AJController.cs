@@ -13,5 +13,13 @@ namespace Assingment_one_QSeven_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult Course()
+        {
+            return View();
+        }
+        public string CourseOne()
+        {
+            return "<code>This Is Course</code>";
+        }
     }
 }

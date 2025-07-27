@@ -13,5 +13,13 @@ namespace Assingment_one_QEight_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult Ai()
+        {
+            return View();
+        }
+        public string AiOne()
+        {
+            return "<button>This Is AI</button>";
+        }
     }
 }
