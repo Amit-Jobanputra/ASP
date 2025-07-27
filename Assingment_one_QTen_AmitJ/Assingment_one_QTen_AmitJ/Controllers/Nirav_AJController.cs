@@ -13,5 +13,13 @@ namespace Assingment_one_QTen_AmitJ.Controllers
         {
             return View();
         }
+        public ActionResult ASP()
+        {
+            return View();
+        }
+        public string ASPOne()
+        {
+            return "<strong>This Is APS Subject</strong>";
+        }
     }
 }
