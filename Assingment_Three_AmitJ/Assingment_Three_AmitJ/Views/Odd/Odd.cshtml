@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Odd";
+    int num = ViewBag.num;
+    int count = 1;
+}
+
+<h2>Odd<br />@num</h2>
+@if (num % 2 == 0)
+{
+    num = num+ 1;
+}
+<table border="5">
+    <thead>
+        <td>Sr No.</td>
+        <td>Number</td>
+    </thead>
+    @for (int i = num; count <= 100; i = i + 2)
+    {
+        if (count % 2 == 0)
+        {
+            <tr>
+                <td>@count</td>
+                <td style="color:red">@i</td>
+            </tr>
+        }
+        else
+        {
+            <tr>
+                <td>@count</td>
+                <td style="color:green">@i</td>
+            </tr>
+        }
+        count++;
+    }
+
+</table>
+
