@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "DyQ1";
+}
+
+<h2>DyQ1</h2>
+
+<form action="/Q1/DyQ1" method="post">
+    <input type="number" name="Snumber" placeholder="Please Enter Starting Number" required /><br />
+    <input type="number" name="Enumber" placeholder="Please Enter Ending Number" required /><br />
+    <input type="submit" value="Submit" />
+</form>
+
+@if (ViewBag.Snum != null && ViewBag.Enum != null)
+{
+    int start = Convert.ToInt32(ViewBag.Snum)+1;
+    int end = Convert.ToInt32(ViewBag.Enum);
+    
+    <h3>Numbers from @start to @end:</h3>
+    for (int i = start; i <= end; i++)
+    {
+        <h4>@i</h4>
+    }
+}

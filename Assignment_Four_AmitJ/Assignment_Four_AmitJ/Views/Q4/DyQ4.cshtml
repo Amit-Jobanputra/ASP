@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "DyQ4";
+    int count = 1;
+}
+
+<h2>DyQ4</h2>
+<form action="/Q4/DyQ4" method="post">
+    <input type="number" name="number" placeholder="Please Enter Ending Number" required /><br />
+    <input type="submit" value="Submit" />
+</form>
+
+@if (ViewBag.number != 0 && ViewBag.number != null)
+{
+    if (ViewBag.number % 2 == 0)
+    {
+          ViewBag.number=ViewBag.number+ 1;
+    }
+<h1>@ViewBag.number</h1>    
+    <table border="5">
+        <thead>
+        <td>Sr No.</td>
+        <td>Number</td>
+        </thead>
+        @for (int i = ViewBag.number; count <= 100; i = i + 2)
+        {
+            if (count % 2 == 0)
+            {
+                <tr>
+                    <td>@count</td>
+                    <td style="color:red">@i</td>
+                </tr>
+            }
+            else
+            {
+                <tr>
+                    <td>@count</td>
+                    <td style="color:green">@i</td>
+                </tr>
+            }
+            count++;
+        }
+
+    </table>
+
+}
+

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "DyQ2";
+}
+<h2>DyQ2</h2>
+<form action="/Q2/DyQ2" method="post">
+    <input type="number" name="Snumber" placeholder="Please Enter Ending Number" required /><br />
+    <input type="submit" value="Submit" />
+</form>
+
+@if (ViewBag.Snum != 0 && ViewBag.Snum != null)
+{
+    for (int i = 1; i < 11; i++)
+    {
+        <h4>@($"{ViewBag.Snum} * {i} = {ViewBag.Snum * i}")<br /></h4>
+    }
+}

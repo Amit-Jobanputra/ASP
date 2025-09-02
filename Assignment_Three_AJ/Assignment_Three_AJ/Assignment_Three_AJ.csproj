@@ -124,6 +124,7 @@
     <Compile Include="Controllers\Q1Controller.cs" />
     <Compile Include="Controllers\Q2Controller.cs" />
     <Compile Include="Controllers\Q3Controller.cs" />
+    <Compile Include="Controllers\Q4Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -168,6 +169,7 @@
     <Content Include="Views\Q1\PrintNumber.cshtml" />
     <Content Include="Views\Q2\Table.cshtml" />
     <Content Include="Views\Q3\Arithmatic.cshtml" />
+    <Content Include="Views\Q4\Odd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
