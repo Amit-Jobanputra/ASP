@@ -1,15 +1,12 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "DyQ4";
     int count = 1;
 }
-
 <h2>DyQ4</h2>
 <form action="/Q4/DyQ4" method="post">
     <input type="number" name="number" placeholder="Please Enter Ending Number" required /><br />
     <input type="submit" value="Submit" />
 </form>
-
 @if (ViewBag.number != 0 && ViewBag.number != null)
 {
     if (ViewBag.number % 2 == 0)
@@ -17,7 +14,7 @@
           ViewBag.number=ViewBag.number+ 1;
     }
 <h1>@ViewBag.number</h1>    
-    <table border="5">
+    <table border="1">
         <thead>
         <td>Sr No.</td>
         <td>Number</td>
@@ -40,8 +37,6 @@
             }
             count++;
         }
-
     </table>
-
 }
 

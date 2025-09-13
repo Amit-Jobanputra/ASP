@@ -1,16 +1,12 @@
-﻿
-
-@{
+﻿@{
     ViewBag.Title = "Arithmatic";
 }
-
 <h2>Arithmatic</h2>
 <form action="/Q3/DyQ3" method="post">
     <input type="number" name="fnumber" placeholder="Please Enter Starting Number" required /><br />
     <input type="number" name="snumber" placeholder="Please Enter Ending Number" required /><br />
     <input type="submit" value="Submit" />
 </form>
-
 @if (ViewBag.Fnum != null && ViewBag.Snum != null)
 {
     int A = ViewBag.Fnum;
@@ -18,7 +14,6 @@
     string[] oprators = { "+", "-", "*", "/" };
     string space = "\t\t";
     int[] result = { A + B, A - B, A * B, A / B };
-
     <p>
         Value A :- @for (int i = 0; i < oprators.Length; i++)
         {@space@A}

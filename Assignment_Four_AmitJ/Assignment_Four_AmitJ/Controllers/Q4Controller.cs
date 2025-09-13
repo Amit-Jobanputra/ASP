@@ -13,6 +13,7 @@ namespace Assignment_Four_AmitJ.Controllers
         {
             return View();
         }
+        [HttpGet]
         public ActionResult DyQ4()
         {
             return View();
