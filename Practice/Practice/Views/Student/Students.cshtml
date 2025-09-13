@@ -1,0 +1,36 @@
+﻿@model Practice.Models.Student
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+<form action="/Student/Students" method="post">
+    @Html.LabelFor(m => m.Id)<br />
+    @Html.TextBoxFor(m => m.Id)<br /><br />
+    @Html.LabelFor(m => m.StdName, "Student Name")<br />
+    @Html.TextBoxFor(m => m.StdName)<br /><br />
+    @Html.LabelFor(m => m.StdAge, "Student Age")<br />
+    @Html.TextBoxFor(m => m.StdAge)<br /><br />
+    @Html.LabelFor(m => m.StdName, "Student Name")<br />
+    @Html.DropDownListFor(m => m.Program, Model.ProgramList, "Select An Option")<br /><br />
+    @Html.LabelFor(m => m.StdGender, "Student Gender")<br />
+    @foreach (var option in Model.Gender)
+    {
+        <label>
+            @Html.RadioButtonFor(m => m.Gender, option.Value) @option.Text
+        </label>
+    }
+    <br /><br />
+    <input type="submit" name="submit" value="Save Entry" />
+</form>
+
+@if (Model != null && Model.Id != 0 && !string.IsNullOrEmpty(Model.StdName) && Model.StdAge > 0 && !string.IsNullOrEmpty(Model.Program))
+{
+    <h3>Entered Details</h3>
+    <p>ID: @Model.Id</p>
+    <p>Name: @Model.StdName</p>
+    <p>Age: @Model.StdAge</p>
+    <p>Program: @Model.Program.</p>
+    <p>Gender: @Model.Gender</p>
+}
+
