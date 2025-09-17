@@ -1,0 +1,26 @@
+﻿@model  List<PracticeDatabase.Models.Emp_detail>
+@using PracticeDatabase.Models
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table">
+    <tr>
+        
+        <td>Emp_Name</td>
+        <td>Emp_exprience</td>
+        <td>Emp_JoiningYear</td>
+        <td>Emp_Department</td>
+    </tr>
+    @foreach (var item in Model.ToList())
+    {
+        <tr>
+           
+            <td>@item.Emp_Name</td>
+            <td>@item.Experience</td>
+            <td>@item.Joining_Year</td>
+            <td>@item.Department</td>
+        </tr>
+    }
+</table>
